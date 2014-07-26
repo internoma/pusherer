@@ -18,7 +18,7 @@ Add Pusherer to your composer.json file:
 
 ```
 "require": {
-	"artdarek/pusherer": "dev-master"
+	"internoma/pusherer": "dev-master"
 }
 ```
 
@@ -34,7 +34,7 @@ Add the Pusherer Service Provider to your config in ``app/config/app.php``:
 
 ```php
 'providers' => array(
-	'Artdarek\Pusherer\PushererServiceProvider'
+	'Internoma\Pusherer\PushererServiceProvider'
 ),
 ```
 
@@ -46,7 +46,7 @@ Run on the command line from the root of your project:
 $ php artisan config:publish artdarek/pusherer
 ```
 
-Set your pusher.com credentials in ``app/config/packages/artdarek/pusherer/config.php``
+Set your pusher.com credentials in ``app/config/packages/internoma/pusherer/config.php``
 
 ```php
 return array( 
