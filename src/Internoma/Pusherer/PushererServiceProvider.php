@@ -1,4 +1,4 @@
-<?php namespace Artdarek\Pusherer;
+<?php namespace Internoma\Pusherer;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Foundation\AliasLoader;
@@ -21,7 +21,7 @@ class PushererServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('artdarek/pusherer');
+		$this->package('internoma/pusherer');
 	}
 
 	/**
@@ -52,7 +52,7 @@ class PushererServiceProvider extends ServiceProvider {
 		    $this->app->booting(function()
 		    {
 		        $loader = AliasLoader::getInstance();
-		        $loader->alias('Pusherer', 'Artdarek\Pusherer\Facades\Pusherer');
+		        $loader->alias('Pusherer', 'Internoma\Pusherer\Facades\Pusherer');
 		    });
 
 	}
